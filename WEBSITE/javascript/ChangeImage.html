@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+	<script>
+		var imagenes=new Array(
+			"../img/Devices.jpg",
+			'../img/Assistance%20Service.PNG',
+			'../img/SL.jpg',
+		);
+
+		function rotarImagenes() {
+			var index=Math.floor((Math.random()*imagenes.length));
+			document.getElementById("imagen").src=imagenes[index];
+		}
+
+		onload=function() {
+			rotarImagenes();
+			setInterval(rotarImagenes,5000);
+		}
+	</script>
+</head>
+<body>
+	<img src="" id="imagen">
+</body>
+</html>

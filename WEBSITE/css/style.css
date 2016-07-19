@@ -1,0 +1,244 @@
+/* Body */
+body{
+	margin-top: 9%;
+	background-color: lightgrey;
+}
+
+.panel {
+	margin-top: 1%;
+	margin-right: 3%;
+	margin-left: 3%;
+	background-color: white;
+}
+
+.row{
+	margin-bottom: 10px;
+	margin-left: 3.5%;
+	margin-right: 3.5%;
+}
+
+.recommended{
+	text-align: center;
+	font-family: monospace;
+	font-size: 26px;
+	position: relative;
+	margin-top:3%;
+	bottom: 1%;
+	border-style: outset;
+	border-color: black;
+	background-color:lightgoldenrodyellow;
+	padding: 1% 1%;
+
+}
+
+.panel-default{
+	margin-top: 4%;
+}
+div.ind{
+	text-align: center;
+	font-family: monospace;
+	font-size: 26px;
+	position: relative;
+	margin-top:3%;
+	bottom: 1%;
+	border-style: outset;
+	border-color: black;
+	background-color:lightskyblue;
+	padding: 1% 1%;
+}
+.promotion > img{
+	border-color: lightgray;
+}
+.highlights > img{
+	border-color: lightgray;
+}
+img{
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
+
+.img-noborder{
+	border-style: none;
+}
+.imagenWithButton, .outlet { 
+	position: relative; 
+	margin-bottom: 1%;
+	margin-right: 1%;
+}
+
+.imagenWithButton > h3 {
+	text-align: center;
+	position: absolute; 
+	top: 30%; 
+	left: 30%; 
+	color:black;
+	background-color: white;
+	padding: 10px 20px;
+	border-style: solid;
+	font-family: monospace;
+	opacity: 0.8;
+}
+
+.outlet > h3{
+	text-align: center;
+	position: absolute; 
+	top: 30%;
+	margin-left: 42%;
+	color:black;
+	background-color: yellow;
+	padding: 10px 20px;
+	border-style: solid;
+	font-family: monospace;
+	opacity: 0.8;
+}
+hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 2px;
+}
+
+/** Who We Are **/
+.row-fluid {
+	display: flex;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+.initialTextWhoWeAre{
+	color: cadetblue;
+	font-size: 35px;
+}
+
+/** ASSISTANCE SERVICE **/
+.buttonAskIt{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: darkblue;
+	border: black 2px solid;
+}
+}
+
+.initialText{
+	margin-right: 70px;
+	margin-left: 70px;
+	background-color: white;
+	color: cadetblue;
+	font-size: 35px;
+}
+
+.former{
+	font-size: 16px;
+	background-color: lightblue;
+	color: black;
+	border-style:dotted;
+}
+
+ul.pagination{
+	position: absolute;
+	border-style: solid;
+	margin-left: 39%;
+	margin-bottom: 30px;
+	z-index: 2;
+}
+
+.panel-heading{
+	font-size: 30px;
+	text-align: center ;
+	font-family: monospace;
+
+}
+div.itemfont{
+	font-family: monospace;
+	position: absolute;
+	color:black;
+	font-size: 30px;
+	text-align: center;
+}
+div.fontprize{
+	font-family: monospace;
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 7%;
+	color:red;
+	font-size: 30px;
+}
+
+
+/** Info Request **/
+a.sendButton{
+	margin-left: 50%;	
+}
+
+div#infoRequest{
+	color:dodgerblue;
+}
+
+@media screen and (max-width: 750px) {
+	body {
+		margin-top: 50%;
+	}
+}
+
+/** Breadcrumbs **/
+.btn-breadcrumb .btn:not(:last-child):after {
+	content: " ";
+	position: fixed;
+	display: block;
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 10px solid white;
+	top: 70%;
+	margin-top: -17px;
+	left: 100%;
+	z-index: 1;
+}
+.btn-breadcrumb .btn:not(:last-child):before {
+	content: " ";
+	display: block;
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 10px solid rgb(173, 173, 173);
+	position: fixed;
+	top: 50%;
+	margin-top: -17px;
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1;
+}
+
+/** The Spacing **/
+.btn-breadcrumb .btn {
+	margin-bottom: 10px;
+	padding:6px 12px 6px 24px;
+}
+.btn-breadcrumb .btn:first-child {
+	margin-left: 50px;
+	padding:6px 6px 6px 10px;
+}
+.btn-breadcrumb .btn:last-child {
+	padding:6px 18px 6px 24px;
+}
+
+/** Default button **/
+.btn-breadcrumb .btn.btn-default:not(:last-child):after {
+	border-left: 10px solid #fff;
+}
+.btn-breadcrumb .btn.btn-default:not(:last-child):before {
+	border-left: 10px solid #ccc;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+	border-left: 10px solid #ebebeb;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+	border-left: 10px solid #adadad;
+}
+/* ----------- END BREADCRUMB --------- */ 

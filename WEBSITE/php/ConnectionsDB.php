@@ -1,0 +1,117 @@
+<?php
+function getDevice($id){
+	/* ALTERVISTA */
+	$username = "tim43hyp";
+	$password = "";
+	$host = "localhost";
+	$database = "my_tim43hyp";
+	
+	/* XAMPP 
+	$username = "root";
+	$password = "";
+	$host = "localhost";
+	$database = "my_hyp43tim";*/
+
+	$db = mysql_connect($host, $username, $password) or die("Unable to connect with the DataBase");
+	mysql_select_db($database, $db) or die("Unable to connect with the DataBase"); 
+
+	$consulta = sprintf("SELECT * FROM device where ID = '$id'");
+	$resultado = mysql_query($consulta);
+	$arr = array();
+	if ($fila = mysql_fetch_assoc($resultado)) {
+		$arr[0] = $fila['Name'];
+		$arr[1] = $fila['Price'];
+		$arr[2] = $fila['Image'];
+		$arr[3] = $fila['Characteristics'];
+		$arr[4] = $fila['Details'];
+		$arr[5] = $fila['Class'];
+	}
+	return $arr;
+}
+
+function getSmartLifeService($id){
+	/* ALTERVISTA */
+	$username = "tim43hyp";
+	$password = "";
+	$host = "localhost";
+	$database = "my_tim43hyp";
+	
+	/* XAMPP 
+	$username = "root";
+	$password = "";
+	$host = "localhost";
+	$database = "my_hyp43tim";*/
+
+	$db = mysql_connect($host, $username, $password) or die("Unable to connect with the DataBase");
+	mysql_select_db($database, $db) or die("Unable to connect with the DataBase"); 
+
+	$consulta = sprintf("SELECT * FROM smartlifeservice where ID = '$id'");
+	$resultado = mysql_query($consulta);
+	$arr = array();
+	if ($fila = mysql_fetch_assoc($resultado)) {
+		$arr[0] = $fila['Name'];
+		$arr[1] = $fila['Price'];
+		$arr[2] = $fila['Image'];
+		$arr[3] = $fila['Characteristics'];
+		$arr[4] = $fila['Details'];
+		$arr[5] = $fila['HowToUse'];
+		$arr[6] = $fila['Class'];
+		$arr[7] = $fila['FurtherDetails'];
+	}
+	return $arr;
+}
+
+function getAssistanceService($id){
+	/* ALTERVISTA */
+	$username = "tim43hyp";
+	$password = "";
+	$host = "localhost";
+	$database = "my_tim43hyp";
+	
+	/* XAMPP 
+	$username = "root";
+	$password = "";
+	$host = "localhost";
+	$database = "my_hyp43tim";*/
+
+	$db = mysql_connect($host, $username, $password) or die("Unable to connect with the DataBase");
+	mysql_select_db($database, $db) or die("Unable to connect with the DataBase"); 
+
+	$consulta = sprintf("SELECT * FROM assistanceservice where ID = '$id'");
+	$resultado = mysql_query($consulta);
+	$arr = array();
+	if ($fila = mysql_fetch_assoc($resultado)) {
+		$arr[0] = $fila['Name'];
+		$arr[1] = $fila['Class'];
+		$arr[2] = $fila['Description'];
+		$arr[3] = $fila['Question'];
+	}
+	return $arr;
+}
+
+function getWhoWeAre($id){
+	/* ALTERVISTA */
+	$username = "tim43hyp";
+	$password = "";
+	$host = "localhost";
+	$database = "my_tim43hyp";
+	
+	/* XAMPP 
+	$username = "root";
+	$password = "";
+	$host = "localhost";
+	$database = "my_hyp43tim";*/
+
+	$db = mysql_connect($host, $username, $password) or die("Unable to connect with the DataBase");
+	mysql_select_db($database, $db) or die("Unable to connect with the DataBase"); 
+
+	$consulta = sprintf("SELECT * FROM whoweare where ID = '$id'");
+	$resultado = mysql_query($consulta);
+	$arr = array();
+	if ($fila = mysql_fetch_assoc($resultado)) {
+		$arr[0] = $fila['Image'];
+		$arr[1] = $fila['Text'];
+	}
+	return $arr;
+}
+

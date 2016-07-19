@@ -1,0 +1,34 @@
+.textHeader{
+	font-size: 15px;
+	color: black;
+	border-style: solid;
+	margin-top: 4%;
+	background-color: aliceblue;
+	margin-right: 15px;
+}
+
+.navbar img#logo {
+	width: 250px;	
+	height: 75px;
+	float: left;
+	margin: 10px 35px;
+}
+
+.navbar{
+	width: 100%; 
+	left: 0; 
+	top: 0; 
+	position: fixed; 	
+	z-index: 100;
+}
+
+@media screen and (max-width: 750px) {
+	.textHeader {
+		margin-top: 1%;
+	}
+
+	.navbar img#logo {
+		margin: 10px;
+	}
+}
+
