@@ -70,14 +70,14 @@
 	<body>
 		<br>
 
-		<!--<div class="panel panel-danger">
+		<div class="panel panel-danger">
 			<div class="panel-heading">SEE OUR LAST PROMOTIONS</div>
 			<div class="panel-body">
 				<div class="col-sm-4" align="left">
 					<?php
-					$array = array();
-					$array = getDevice('1');
-					?>
+$array = array();
+$array = getDevice('1');
+?>
 					<a href="pages/Devices/showDevice.php?id=1">
 						<div class="imagenWithButton" align="center">
 							<img class="img-noborder img-responsive" src="php/getImageDevice.php?id=1" style="width:300px;height:250px" alt="Promotion">
@@ -91,9 +91,9 @@
 
 				<div class="col-sm-4" align="left">
 					<?php
-	$array = array();
-						$array = getDevice('7');
-					?>
+$array = array();
+$array = getDevice('7');
+?>
 					<a href="pages/Devices/showDevice.php?id=7">
 						<div class="imagenWithButton" align="center">
 							<img class="img-noborder img-responsive" src="php/getImageDevice.php?id=7" style="width:300px;height:250px" alt="Promotion">
@@ -106,9 +106,9 @@
 				</div>
 				<div class="col-sm-4" align="left">
 					<?php
-	$array = array();
-						$array = getSmartLifeService('7');
-					?>
+$array = array();
+$array = getSmartLifeService('7');
+?>
 					<a href="pages/SmartLifeService/Device/GenericDevice.php?id=7">
 						<div class="imagenWithButton" align="center">
 							<img class="img-noborder img-responsive" src="php/getImageSmart.php?id=7" style="width:300px;height:250px" alt="Promotion">
@@ -124,7 +124,7 @@
 					<br> 
 				</div>
 			</div>
-		</div>-->
+		</div>
 
 		<br>
 		<div class="panel panel-default">
